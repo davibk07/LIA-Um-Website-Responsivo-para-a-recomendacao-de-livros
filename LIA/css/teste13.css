@@ -1,0 +1,101 @@
+html, body 
+{
+  height: 100%;
+  margin: 0;
+}
+body 
+{
+  display: flex;
+  flex-direction: column;
+}
+.svg-pequeno
+{
+  width: 90px;
+  height: 90px;
+}
+.livro-capa
+{
+  max-width: 115px;
+  min-width: 115px;
+}
+.bg-cinza-claro 
+{
+  background-color: #f8f9fa !important;
+}
+
+.bg-cinza-medio 
+{
+  background-color: #ced4da !important; 
+}
+.container-custom
+{
+  padding-top: 3%;
+  padding-bottom: 2%;
+  flex: 1;
+}
+.title
+{
+  font-size: 5rem;
+}
+.footer-padding
+{
+  padding-left: 2%;
+}
+.footer-padding p
+{
+  padding-top: 1%;
+}
+.imagem-perfil
+{
+  width:60px; 
+  height:60px; 
+  object-fit:cover;
+}
+.livro-capa 
+{
+    height: 180px;
+    width: auto;
+    object-fit: cover;
+}
+.icones-menu img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+.icones-menu img:hover 
+{
+    transform: scale(1.15) rotate(-5deg);
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+}
+.elemento-navegacao 
+{
+    transition: transform 0.3s ease, filter 0.3s ease, color 0.3s ease;
+}
+
+.links-navegacao .d-flex:hover .elemento-navegacao img,
+.links-navegacao .d-flex:hover .elemento-navegacao 
+{
+    transform: scale(1.15);
+    filter: brightness(1.3);
+}
+.links-navegacao .d-flex:hover p.elemento-navegacao 
+{
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 800px)
+{
+  #menu_aberto_botao, #menu_fechado_botao
+  {
+    display: none;
+  }
+  .bloco-login
+  {
+    visibility: hidden;
+  }
+  .login-container
+  {
+    width: 100%;
+  }
+  p 
+  {
+    font-size: 10pt;
+  }
+}
